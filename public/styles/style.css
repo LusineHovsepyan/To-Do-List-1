@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    font-weight: 500;
+    font-size: 1.1em;
+    background-color: teal;    
+    box-shadow: 0 0 10px grey;
+}
+
+.menu {
+    display: flex;
+    padding: 5px 5px 5px 15px;
+}
+
+.menu-btn {
+    margin: 5px;
+    padding: 3px 7px;
+    width: 6rem;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.7rem;
+    box-shadow: 0 0 8px #00eaff;
+    border-left: groove #00eaff;
+    border-bottom: groove #00eaff;
+}
+
+.menu-btn:hover {
+    background-color: #00eaff;
+    cursor: pointer;
+}
+
+.menu-btn > a {
+    text-decoration: none;
+    color: grey;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(89, 236, 236);
+    text-align: center;
+}
+
+.header {
+    margin: auto auto 0 auto;
+    padding: 20px 0 20px 0;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.app-description {
+    padding: 20px 0 0 0;
+    font-size: 1.5em;
+    color: rgb(60, 60, 60);
+    text-shadow: 0 0 0.5px #191b1b;
+    line-height: 170%;
+}
+
+footer {
+    color: rgb(60, 60, 60);
+    margin: auto auto 0 auto;
+    padding: 20px 0 0 0;
+    text-shadow: 0 0 0.5px #191b1b;
+}
+
+.container{
+    margin: auto;
+    max-width: 500px;
+    width: 90%;
+}
+
+.current-date{
+    background-color: teal;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px grey;
+    padding: 10px 0;
+    margin: 20px auto;
+}
+
+.list-box{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px grey;
+    padding: 20px;
+    margin: auto;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    accent-color: teal;
+}
+
+.new-task-form{
+    margin: auto;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    
+}
+
+.checkbox:checked + .text{
+    text-decoration: line-through teal;
+}
+
+.add-list-item{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.add-btn{
+    width: 4rem;
+    height: auto;
+    padding: 0;
+    margin: auto;
+    background-color: grey;
+    border-left: groove grey;
+    border-bottom: groove grey;
+    box-shadow: 0 0 5px grey;
+    text-align: center;
+    font-size: 1.2em;
+    text-shadow: 0 0 2px #191b1b;
+}
+
+.input-item{
+    width: 100%;
+    height: 35px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px grey;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 0;
+    padding: 15px;
+}
+
+.delete-btn, .edit-btn{
+    display: flex;
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 0.5rem;   
+    box-shadow: 0 0 10px grey;
+    margin-left: 10px;    
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover, .edit-btn:hover{
+    background-color: teal;
+    cursor: pointer;    
+}
+
+.list-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.text{
+    margin: 0 10px 0 10px;
+    font-size: 1.3rem;
+    color: rgb(85, 85, 85);
+    text-shadow: 0 0 1px grey;
+    text-transform: lowercase;
+    text-align: justify;
+    display: block;    
+}
